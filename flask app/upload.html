@@ -45,13 +45,6 @@
 }
     </style>
 
-    
-
-
-
-
-
-
 
 </head>
 
@@ -73,7 +66,7 @@
                         <ul class=" main-nav__navigation-box">
                             <li class="dropdown">
                                 <a href="index.html">Home</a>
-                                
+
                             </li>
                             <li>
                                 <a href="about.html">About</a>
@@ -115,7 +108,7 @@
             <div class="container">
                 <h2>COVID Detector</h2>
                 <ul class="thm-breadcrumb list-unstyled">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><span>Detect COVID</span></li>
                 </ul><!-- /.thm-breadcrumb -->
             </div><!-- /.container -->
@@ -129,50 +122,50 @@
                     <p style="font-size: 25px;">Please select the type of image you want to diagnose</p>
                 </div><!-- /.block-title text-center -->
 
-                
+
                 <div class="row">
                     <div class="col-lg-6" style="padding-left: 100px;">
                         <div class="card" style="width: 25rem;">
-                        <p class="card-title" style="text-align: center; padding-top: 10px;padding-bottom: 10px;color:white; background-color:#112559;">Chest X-Ray</p>
-                        <img class="card-img-top" src="assets/images/x-ray.png" height="200px" alt="Card image cap">
-                        <div class="card-body">
-                        
-                        <p class="card-text"></p>
-                        
-                        <div class="text-center">
-                        <form action = "/uploaded_chest" method = "post" enctype="multipart/form-data">  
-                        <label for="file-upload_1" id="label_1" class="custom-file-upload btn btn-primary" style="margin-top: 8px; margin-right: 10px;">
-                        Select Image
-                        </label>
-                        <input type="file" name="file" id="file-upload_1" onchange="showname()"/>  
-                        <input type = "submit" value="Upload" class="btn btn-success">  
-                        </form>
-                        </div>  
+                            <p class="card-title" style="text-align: center; padding-top: 10px;padding-bottom: 10px;color:white; background-color:#112559;">Chest X-Ray</p>
+                            <img class="card-img-top" src="assets/images/x-ray.png" height="200px" alt="Card image cap">
+                            <div class="card-body">
 
-                        </div>
+                                <p class="card-text"></p>
+
+                                <div class="text-center">
+                                    <form action="/uploaded_chest" method="post" enctype="multipart/form-data">
+                                        <label for="file-upload_1" id="label_1" class="custom-file-upload btn btn-primary" style="margin-top: 8px; margin-right: 10px;">
+                                            Select Image
+                                        </label>
+                                        <input type="file" name="file" id="file-upload_1" onchange="showname()" />
+                                        <input type="submit" value="Upload" class="btn btn-success">
+                                    </form>
+                                </div>
+
+                            </div>
                         </div>
 
                     </div><!-- /.col-lg-6 -->
                     <div class="col-lg-6">
                         <div class="card" style="width: 25rem;">
-                        <p class="card-title" style="text-align: center; padding-top: 10px;padding-bottom: 10px;color:white; background-color:#112559;">CT Scan</p>
-                        <img class="card-img-top" src="assets/images/ct-scan.png" height="200px" alt="Card image cap">
-                        <div class="card-body">
-                        
-                        <p class="card-text"></p>
-                        
+                            <p class="card-title" style="text-align: center; padding-top: 10px;padding-bottom: 10px;color:white; background-color:#112559;">CT Scan</p>
+                            <img class="card-img-top" src="assets/images/ct-scan.png" height="200px" alt="Card image cap">
+                            <div class="card-body">
 
-                        <div class="text-center">
-                        <form action = "/uploaded_ct" method = "post" enctype="multipart/form-data">  
-                        <label for="file-upload_2" id="label_2" class="custom-file-upload btn btn-primary" style="margin-top: 8px; margin-right: 10px;">
-                        Select Image
-                        </label>
-                        <input type="file" name="file" id="file-upload_2" onchange="showname_2()"/>  
-                        <input type = "submit" value="Upload" class="btn btn-success">  
-                        </form>
-                        </div>
+                                <p class="card-text"></p>
 
-                        </div>
+
+                                <div class="text-center">
+                                    <form action="/uploaded_ct" method="post" enctype="multipart/form-data">
+                                        <label for="file-upload_2" id="label_2" class="custom-file-upload btn btn-primary" style="margin-top: 8px; margin-right: 10px;">
+                                            Select Image
+                                        </label>
+                                        <input type="file" name="file" id="file-upload_2" onchange="showname_2()" />
+                                        <input type="submit" value="Upload" class="btn btn-success">
+                                    </form>
+                                </div>
+
+                            </div>
                         </div>
                     </div><!-- /.col-lg-6 -->
                 </div><!-- /.row -->
@@ -235,6 +228,8 @@
         </section><!-- /.cta-one -->
 
 
+
+
         <footer class="site-footer-one site-footer-one__home-one">
 
             <div class="site-footer-one__upper">
@@ -253,15 +248,14 @@
                                 <h3 class="footer-widget__title">Quick Links</h3><!-- /.footer-widget__title -->
                                 <div class="footer-widget__links-wrap">
                                     <ul class="list-unstyled footer-widget__links-list">
+                                        <li><a href="index.html">Home</a></li>
                                         <li><a href="about.html">About</a></li>
-                                        
-                                        <li><a href="prevention.html">Prevention</a></li>
                                         <li><a href="contact.html">Contact</a></li>
                                     </ul><!-- /.list-unstyled -->
                                     <ul class="list-unstyled footer-widget__links-list">
+                                        <li><a href="prevention.html">Prevention</a></li>
                                         <li><a href="faqs.html">FAQs</a></li>
-                                        <li><a href="about.html">Privacy Policy</a></li>
-                                        <li><a href="about.html">Terms of Use</a></li>
+                                        <li> <a href="https://news.google.com/search?q=covid">News</a></li>
                                     </ul><!-- /.list-unstyled -->
                                 </div><!-- /.footer-widget__links-wrap -->
 
@@ -270,19 +264,13 @@
                         <div class="col-lg-3">
                             <div class="footer-widget footer-widget__contact">
                                 <h3 class="footer-widget__title">Contact</h3><!-- /.footer-widget__title -->
-                                <p><a href="tel:888-999-0000">888 999 0000</a></p>
-                                <p><a href="kaushikjadhav01@github.com">kaushikjadhav01@github.com</a> </p>
-                                <p>19/293, Vihang Tower, <br> Mumbai 400104</p>
+                                <p><a href="#">630 255 4150</a></p>
+                                <p><a href="#">bbncovid2022@gmail.com</a> </p>
                             </div><!-- /.footer-widget footer-widget__contact -->
                         </div><!-- /.col-lg-3 -->
                         <div class="col-lg-2 d-flex">
                             <div class="footer-widget my-auto">
-                                <div class="footer-widget__social">
-                                    <a href="#" class="fab fa-facebook-square" href="https://www.facebook.com/"></a>
-                                    <a href="#" class="fab fa-twitter" href="https://www.twitter.com/"></a>
-                                    <a href="#" class="fab fa-instagram" href="https://www.instagram.com/"></a>
-                                    <a href="#" class="fab fa-pinterest-p" href="https://www.pinterest.com/"></a>
-                                </div><!-- /.footer-widget__social -->
+
                             </div><!-- /.footer-widget -->
                         </div><!-- /.col-lg-2 -->
                     </div><!-- /.row -->
@@ -290,7 +278,7 @@
             </div><!-- /.site-footer-one__upper -->
             <div class="site-footer-one__bottom">
                 <div class="container">
-                    <p>© copyright 2020 by <a href="#">kaushikjadhav01</a></p>
+                    <p>© copyright 2022 by <a href="#">bbncovid2022</a></p>
                 </div><!-- /.container -->
             </div><!-- /.site-footer-one__bottom -->
         </footer><!-- /.site-footer-one -->
@@ -300,48 +288,18 @@
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
 
 
-    <div class="side-menu__block">
-
-
-        <div class="side-menu__block-overlay custom-cursor__overlay">
-            <div class="cursor"></div>
-            <div class="cursor-follower"></div>
-        </div><!-- /.side-menu__block-overlay -->
-        <div class="side-menu__block-inner ">
-            <div class="side-menu__top justify-content-end">
-
-                <a href="#" class="side-menu__toggler side-menu__close-btn"><img src="assets/images/shapes/close-1-1.png" alt=""></a>
-            </div><!-- /.side-menu__top -->
-
-
-            <nav class="mobile-nav__container">
-                <!-- content is loading via js -->
-            </nav>
-            <div class="side-menu__sep"></div><!-- /.side-menu__sep -->
-            <div class="side-menu__content">
-                <p></p>
-                <p><a href="mailto:kaushikjadhav01@github.com">kaushikjadhav01@github.com</a> <br> <a href="tel:888-999-0000">888 999 0000</a></p>
-                <div class="side-menu__social">
-                    <a href="#" class="fab fa-facebook-square" href="https://www.facebook.com/"></a>
-                                    <a href="#" class="fab fa-twitter" href="https://www.twitter.com/"></a>
-                                    <a href="#" class="fab fa-instagram" href="https://www.instagram.com/"></a>
-                                    <a href="#" class="fab fa-pinterest-p" href="https://www.pinterest.com/"></a>
-                </div>
-            </div><!-- /.side-menu__content -->
-        </div><!-- /.side-menu__block-inner -->
-    </div><!-- /.side-menu__block -->
 
 
     <script type="text/javascript">
-        
-        function showname () {
-      var name_1 = document.getElementById('file-upload_1'); 
-      document.getElementById('label_1').innerHTML = name_1.files.item(0).name; 
-    };
-    function showname_2 () {
-      var name_2 = document.getElementById('file-upload_2'); 
-      document.getElementById('label_2').innerHTML = name_2.files.item(0).name; 
-    };
+
+        function showname() {
+            var name_1 = document.getElementById('file-upload_1');
+            document.getElementById('label_1').innerHTML = name_1.files.item(0).name;
+        };
+        function showname_2() {
+            var name_2 = document.getElementById('file-upload_2');
+            document.getElementById('label_2').innerHTML = name_2.files.item(0).name;
+        };
     </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
